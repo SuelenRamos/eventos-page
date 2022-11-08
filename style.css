@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+
+  --all-shadow:
+    0 0 0.1vw 0.4vw #FFE3F3,
+    0 0 0.4vw 0.6vw #D9298A,
+    0 0 1vw 0.4vw #D9298A,
+    inset 0 0 0.1vw 0.4vw #FFE3F3,
+    inset 0 0 0.4vw 0.6vw #D9298A,
+    inset 0 0 1vw 0.4vw #D9298A;
+}
+
+body {
+    background-color: #000000;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.titulo {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gallery-container-eventos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1vw;
+    padding: 0 5vw;
+    padding-top: 10%;
+    padding-bottom: 10%;
+   
+}
+
+.gallery-items {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    flex-grow: 1;
+    transition: transform .5s linear;
+    object-fit: contain;
+}
+
+
+#outer {
+    box-shadow: var(--all-shadow);
+    border-radius: .2rem;
+  }
